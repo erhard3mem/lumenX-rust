@@ -1,0 +1,15 @@
+[package]
+name = "lumenx"
+version = "0.2.0"
+edition = "2021"
+description = "LUMENX trick-taking card game — native desktop GUI"
+
+[dependencies]
+eframe = "0.36"
+rand = "0.9"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
